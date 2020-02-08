@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1581167494125">
+  <link rel="stylesheet" href="/css/style.css?v=1581167650699">
 
   
 <meta name="generator" content="Hexo 4.2.0"></head>
@@ -210,8 +210,7 @@
 <p>这时候会要你输密码。就刚刚的ssh key的密码。</p>
 <p>总之成功会有 successfully 的字眼，失败会有 denied 字眼。</p>
 <h3 id="6、部署-hexo-到-GitHub"><a href="#6、部署-hexo-到-GitHub" class="headerlink" title="6、部署 hexo 到 GitHub"></a>6、部署 hexo 到 GitHub</h3><p>最后一步了，博客根目录输入 <code>npm install hexo-deployer-git --save</code> 安装 deploy-git。</p>
-<p>修改根目录下的config文件：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">     <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">     <span class="attr">repository:</span> <span class="string">你GitHub项目地址，例如我的：https://github.com/singlebee/singlebee.github.io</span></span><br><span class="line">     <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<p>修改根目录下的config文件：<br>    deploy:<br>     type: git<br>     repository: 你GitHub项目地址，例如我的：<a href="https://github.com/singlebee/singlebee.github.io" target="_blank" rel="noopener">https://github.com/singlebee/singlebee.github.io</a><br>     branch: master</p>
 <p>然后输入 <code>hexo clean</code> 清除你生成的东西，有时候改了东西网页却没变可以用这个清除一下。</p>
 <p>输入 <code>hexo g</code> 生成静态文件</p>
 <p>输入 <code>hexo d</code> 部署到服务器</p>
@@ -413,7 +412,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
-<script src="/js/app.js?v=1581167494135"></script>
+<script src="/js/app.js?v=1581167650709"></script>
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
